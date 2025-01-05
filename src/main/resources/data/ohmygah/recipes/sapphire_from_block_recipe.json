@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "ohmygah:sapphire_block"
+    }
+  ],
+  "result": {
+    "item": "ohmygah:sapphire",
+    "count": 9
+  }
+}
