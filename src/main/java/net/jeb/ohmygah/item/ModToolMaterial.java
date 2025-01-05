@@ -8,7 +8,7 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    RUBY(MiningLevels.DIAMOND,6.5f,1478,13,2.9f, () -> Ingredient.ofItems(ModItems.SAPPHIRE))
+    RUBY(MiningLevels.DIAMOND,7.5f,1478,15,1.0f, () -> Ingredient.ofItems(ModItems.SAPPHIRE))
 
     ;
 

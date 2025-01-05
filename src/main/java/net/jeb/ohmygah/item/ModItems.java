@@ -16,15 +16,15 @@ public class ModItems {
     public static final Item RAW_SAPPHIRE = registerItem("raw_sapphire", new Item(new FabricItemSettings()));
 
     public static final Item SAPPHIRE_SWORD = registerItem("sapphire_sword",
-            new SwordItem(ModToolMaterial.RUBY, 7, 1.6f, new FabricItemSettings()));
+            new SwordItem(ModToolMaterial.RUBY, 5, -2.4f, new FabricItemSettings()));
     public static final Item SAPPHIRE_AXE = registerItem("sapphire_axe",
-            new AxeItem(ModToolMaterial.RUBY,9,1.0f,new FabricItemSettings()));
+            new AxeItem(ModToolMaterial.RUBY,7,-3.0f,new FabricItemSettings()));
     public static final Item SAPPHIRE_HOE = registerItem("sapphire_hoe",
-            new HoeItem(ModToolMaterial.RUBY,1,4.0f,new FabricItemSettings()));
+            new HoeItem(ModToolMaterial.RUBY,0,-1.0f,new FabricItemSettings()));
     public static final Item SAPPHIRE_SHOVEL = registerItem("sapphire_shovel",
-            new ShovelItem(ModToolMaterial.RUBY,5,1.0f,new FabricItemSettings()));
+            new ShovelItem(ModToolMaterial.RUBY,3,-3.0f,new FabricItemSettings()));
     public static final Item SAPPHIRE_PICKAXE = registerItem("sapphire_pickaxe",
-            new PickaxeItem(ModToolMaterial.RUBY,5,1.2f,new FabricItemSettings().maxCount(1)));
+            new PickaxeItem(ModToolMaterial.RUBY,3,-2.8f,new FabricItemSettings().maxCount(1)));
 
     private static void addItemsToCombatItemGroup(FabricItemGroupEntries entries) {
         entries.add(SAPPHIRE_SWORD);
