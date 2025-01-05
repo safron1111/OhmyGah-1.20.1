@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ohmygah:raw_sapphire"
+    },
+    {
+      "item": "ohmygah:iron_chisel"
+    }
+  ],
+  "result": {
+    "item": "ohmygah:sapphire",
+    "count": 1
+  }
+}

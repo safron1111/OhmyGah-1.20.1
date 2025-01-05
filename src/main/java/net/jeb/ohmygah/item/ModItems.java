@@ -26,6 +26,9 @@ public class ModItems {
     public static final Item SAPPHIRE_PICKAXE = registerItem("sapphire_pickaxe",
             new PickaxeItem(ModToolMaterial.SAPPHIRE,3,-2.8f,new FabricItemSettings()));
 
+    public static final Item IRON_CHISEL = registerItem("iron_chisel",
+            new ToolItem(ModToolMaterial.CHISEL,new FabricItemSettings()));
+
     public static final Item SAPPHIRE_CROWN = registerItem("sapphire_crown",
             new ArmorItem(ModArmorMaterial.SAPPHIRE_CROWN,ArmorItem.Type.HELMET,new FabricItemSettings()));
 

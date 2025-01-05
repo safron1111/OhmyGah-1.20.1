@@ -3,6 +3,8 @@ package net.jeb.ohmygah.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.jeb.ohmygah.Ohmygah;
+import net.jeb.ohmygah.block.advanced.SpringBlock;
+import net.jeb.ohmygah.block.advanced.SuperSpringBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.ExperienceDroppingBlock;
@@ -17,6 +19,10 @@ public class ModBlocks {
 
     public static final Block SAPPHIRE_BLOCK = registerBlock("sapphire_block",
             new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK)));
+    public static final Block SPRING_BLOCK = registerBlock("spring_block",
+            new SpringBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+    public static final Block SUPERSPRING_BLOCK = registerBlock("superspring_block",
+            new SuperSpringBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
     public static final Block SAPPHIRE_ORE = registerBlock("sapphire_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.EMERALD_ORE),UniformIntProvider.create(2,4)));
 

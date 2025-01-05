@@ -1,13 +1,16 @@
 package net.jeb.ohmygah.item;
 
 import net.fabricmc.yarn.constants.MiningLevels;
+import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    SAPPHIRE(MiningLevels.DIAMOND,7.5f,1478,15,1.0f, () -> Ingredient.ofItems(ModItems.SAPPHIRE))
+    SAPPHIRE(MiningLevels.DIAMOND,7.5f,1478,15,1.0f, () -> Ingredient.ofItems(ModItems.SAPPHIRE)),
+    CHISEL(MiningLevels.IRON,4.5f,128,9,1.0f, () -> Ingredient.ofItems(Items.IRON_NUGGET))
     ;
 
     private final int miningLevel;

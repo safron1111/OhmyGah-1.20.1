@@ -25,6 +25,9 @@ public class ModItemGroups {
                         entries.add(ModItems.SAPPHIRE_SHOVEL);
                         entries.add(ModItems.SAPPHIRE_PICKAXE);
                         entries.add(ModItems.SAPPHIRE_CROWN);
+                        entries.add(ModItems.IRON_CHISEL);
+                        entries.add(ModBlocks.SPRING_BLOCK);
+                        entries.add(ModBlocks.SUPERSPRING_BLOCK);
                     }).build());
 
     public static void registerItemGroups(){

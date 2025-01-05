@@ -2,13 +2,19 @@
   "item.ohmygah.sapphire": "Sapphire",
   "item.ohmygah.raw_sapphire": "Raw Sapphire",
   "itemgroup.ohmygah": "Oh my gah",
+
   "block.ohmygah.sapphire_block": "Block of Sapphire",
   "block.ohmygah.sapphire_ore": "Sapphire Ore",
+
+  "block.ohmygah.spring_block": "Spring Block",
+  "block.ohmygah.superspring_block": "Super Spring Block",
 
   "item.ohmygah.sapphire_sword": "Sapphire Sword",
   "item.ohmygah.sapphire_axe": "Sapphire Axe",
   "item.ohmygah.sapphire_hoe": "Sapphire Hoe",
   "item.ohmygah.sapphire_shovel": "Sapphire Shovel",
   "item.ohmygah.sapphire_pickaxe": "Sapphire Pickaxe",
-  "item.ohmygah.sapphire_crown": "Sapphire Crown"
+  "item.ohmygah.sapphire_crown": "Sapphire Crown",
+
+  "item.ohmygah.iron_chisel": "Iron Chisel"
 }

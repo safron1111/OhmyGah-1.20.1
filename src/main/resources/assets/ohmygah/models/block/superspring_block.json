@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "ohmygah:block/superspring_block_top",
+    "east": "ohmygah:block/superspring_block_side",
+    "north": "ohmygah:block/superspring_block_side",
+    "particle": "ohmygah:block/superspring_block_side",
+    "south": "ohmygah:block/superspring_block_side",
+    "up": "ohmygah:block/superspring_block_top",
+    "west": "ohmygah:block/superspring_block_side"
+  }
+}
