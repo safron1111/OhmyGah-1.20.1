@@ -14,9 +14,10 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     public static final Item SAPPHIRE = registerItem("sapphire", new Item(new FabricItemSettings()));
+    public static final Item RAW_SAPPHIRE = registerItem("raw_sapphire", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
-        entries.add(SAPPHIRE);
+
     }
 
     private static Item registerItem(String name, Item item) {

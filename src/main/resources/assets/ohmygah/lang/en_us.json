@@ -1,4 +1,6 @@
 {
   "item.ohmygah.sapphire": "Sapphire",
-  "itemgroup.ohmygah": "Oh my gah"
+  "item.ohmygah.raw_sapphire": "Raw Sapphire",
+  "itemgroup.ohmygah": "Oh my gah",
+  "block.ohmygah.sapphire_block": "Block of Sapphire"
 }
