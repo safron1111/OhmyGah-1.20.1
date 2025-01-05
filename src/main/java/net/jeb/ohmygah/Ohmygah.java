@@ -2,6 +2,7 @@ package net.jeb.ohmygah;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.jeb.ohmygah.item.ModItemGroups;
 import net.jeb.ohmygah.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,6 +21,7 @@ public class Ohmygah implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 	}
 }
