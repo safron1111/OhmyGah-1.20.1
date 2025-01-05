@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "ohmygah",
+	"version": "${version}",
+	"name": "ohmygah",
+	"description": "oh my gah",
+	"authors": [
+		"Me: https://www.curseforge.com/members/kilo_safron",
+		"Also Me: https://modrinth.com/user/safron1111",
+		"And Me: https://www.youtube.com/@jebediahmothman"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/ohmygah/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.jeb.ohmygah.Ohmygah"
+		],
+		"client": [
+			"net.jeb.ohmygah.OhmygahClient"
+		],
+		"fabric-datagen": [
+			"net.jeb.ohmygah.OhmygahDataGenerator"
+		]
+	},
+	"mixins": [
+		"ohmygah.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
