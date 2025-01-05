@@ -24,6 +24,7 @@ public class ModItemGroups {
                         entries.add(ModItems.SAPPHIRE_HOE);
                         entries.add(ModItems.SAPPHIRE_SHOVEL);
                         entries.add(ModItems.SAPPHIRE_PICKAXE);
+                        entries.add(ModItems.SAPPHIRE_CROWN);
                     }).build());
 
     public static void registerItemGroups(){
