@@ -1,17 +1,11 @@
 package net.jeb.ohmygah.entity.custom.plasticexplosive;
 
-import net.jeb.ohmygah.Ohmygah;
 import net.jeb.ohmygah.block.ModBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.*;
-import net.minecraft.entity.data.DataTracker;
-import net.minecraft.entity.data.TrackedData;
-import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.nbt.NbtHelper;
-import net.minecraft.nbt.NbtString;
 import net.minecraft.particle.ParticleTypes;
-import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;

@@ -1,22 +1,19 @@
 package net.jeb.ohmygah.block.advanced;
 
 import net.jeb.ohmygah.entity.custom.plasticexplosive.PlasticExplosiveEntity;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.TntBlock;
+import net.minecraft.block.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.TntEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.ProjectileEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.nbt.NbtCompound;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
+import net.minecraft.state.property.BooleanProperty;
+import net.minecraft.state.property.Properties;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
@@ -24,11 +21,15 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
 import net.minecraft.world.explosion.Explosion;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class PlasticExplosive extends TntBlock {
-    public PlasticExplosive(Settings settings) {
+    public static final BooleanProperty UNSTABLE = Properties.UNSTABLE;
+
+    public PlasticExplosive(AbstractBlock.Settings settings) {
         super(settings);
+        this.setDefaultState(this.getDefaultState().with(UNSTABLE, Boolean.valueOf(false)));
     }
 
     @Override
@@ -45,7 +46,7 @@ public class PlasticExplosive extends TntBlock {
         primeExplosive(world, pos, null);
     }
 
-    private static void primeExplosive(World world, BlockPos pos, @Nullable LivingEntity igniter) {
+    private static void primeExplosive(@NotNull World world, BlockPos pos, @Nullable LivingEntity igniter) {
         if (!world.isClient) {
             PlasticExplosiveEntity plasticExplosiveEntity = new PlasticExplosiveEntity(world, (double)pos.getX() + 0.5, (double)pos.getY(), (double)pos.getZ() + 0.5, igniter);
             world.spawnEntity(plasticExplosiveEntity);

@@ -21,9 +21,9 @@ public class ModBlocks {
     public static final Block SAPPHIRE_BLOCK = registerBlock("sapphire_block",
             new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK)));
     public static final Block PLASTIC_EXPLOSIVE = registerBlock("plastic_explosive",
-            new PlasticExplosive(FabricBlockSettings.copyOf(Blocks.TNT)));
+            new PlasticExplosive(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
     public static final Block SPRING_BLOCK = registerBlock("spring_block",
-            new SpringBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+            new SpringBlock(FabricBlockSettings.copyOf(Blocks.TNT)));
     public static final Block SUPERSPRING_BLOCK = registerBlock("superspring_block",
             new SuperSpringBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
     public static final Block SAPPHIRE_ORE = registerBlock("sapphire_ore",

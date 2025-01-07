@@ -2,17 +2,15 @@ package net.jeb.ohmygah.entity.client;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+import net.jeb.ohmygah.block.ModBlocks;
 import net.jeb.ohmygah.entity.custom.plasticexplosive.PlasticExplosiveEntity;
-import net.minecraft.block.Blocks;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.block.BlockRenderManager;
 import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.client.render.entity.EntityRendererFactory;
-import net.minecraft.client.render.entity.TntEntityRenderer;
 import net.minecraft.client.render.entity.TntMinecartEntityRenderer;
-import net.minecraft.client.texture.SpriteAtlasTexture;
 import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.entity.TntEntity;
+import net.minecraft.data.client.TextureMap;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.RotationAxis;
@@ -25,6 +23,11 @@ public class PlasticExplosiveRenderer extends EntityRenderer<PlasticExplosiveEnt
         super(context);
         this.shadowRadius = 0.5F;
         this.blockRenderManager = context.getBlockRenderManager();
+    }
+
+    @Override
+    public Identifier getTexture(PlasticExplosiveEntity entity) {
+        return TextureMap.getId(ModBlocks.PLASTIC_EXPLOSIVE);
     }
 
     public void render(PlasticExplosiveEntity tntEntity, float f, float g, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i) {
@@ -43,12 +46,8 @@ public class PlasticExplosiveRenderer extends EntityRenderer<PlasticExplosiveEnt
         matrixStack.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(-90.0F));
         matrixStack.translate(-0.5F, -0.5F, 0.5F);
         matrixStack.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(90.0F));
-        TntMinecartEntityRenderer.renderFlashingBlock(this.blockRenderManager, Blocks.TNT.getDefaultState(), matrixStack, vertexConsumerProvider, i, j / 5 % 2 == 0);
+        TntMinecartEntityRenderer.renderFlashingBlock(this.blockRenderManager, ModBlocks.PLASTIC_EXPLOSIVE.getDefaultState(), matrixStack, vertexConsumerProvider, i, j / 5 % 2 == 0);
         matrixStack.pop();
         super.render(tntEntity, f, g, matrixStack, vertexConsumerProvider, i);
-    }
-
-    public Identifier getTexture(PlasticExplosiveEntity plasticExplosiveEntity) {
-        return SpriteAtlasTexture.BLOCK_ATLAS_TEXTURE;
     }
 }
