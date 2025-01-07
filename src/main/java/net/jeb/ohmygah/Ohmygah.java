@@ -2,7 +2,10 @@ package net.jeb.ohmygah;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.jeb.ohmygah.block.ModBlocks;
+import net.jeb.ohmygah.entity.custom.ModEntities;
+import net.jeb.ohmygah.entity.custom.bouncy_slime.BouncySlimeEntity;
 import net.jeb.ohmygah.item.ModItemGroups;
 import net.jeb.ohmygah.item.ModItems;
 import org.slf4j.Logger;
@@ -25,5 +28,7 @@ public class Ohmygah implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModEntities.registerModEntities();
+		FabricDefaultAttributeRegistry.register(ModEntities.BOUNCYSLIME, BouncySlimeEntity.createBouncySlimeAttributes());
 	}
 }

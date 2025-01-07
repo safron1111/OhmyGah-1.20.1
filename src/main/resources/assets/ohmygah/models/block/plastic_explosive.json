@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "ohmygah:block/plastic_explosive_bottom",
+    "east": "ohmygah:block/plastic_explosive_side",
+    "north": "ohmygah:block/plastic_explosive_side",
+    "particle": "ohmygah:block/plastic_explosive_side",
+    "south": "ohmygah:block/plastic_explosive_side",
+    "up": "ohmygah:block/plastic_explosive_top",
+    "west": "ohmygah:block/plastic_explosive_side"
+  }
+}

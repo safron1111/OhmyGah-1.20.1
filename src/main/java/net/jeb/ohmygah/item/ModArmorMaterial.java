@@ -1,7 +1,5 @@
 package net.jeb.ohmygah.item;
 
-import com.sun.jna.WString;
-import it.unimi.dsi.fastutil.objects.ObjectHeapIndirectPriorityQueue;
 import net.jeb.ohmygah.Ohmygah;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
@@ -18,7 +16,10 @@ public enum ModArmorMaterial implements ArmorMaterial {
             () -> Ingredient.ofItems(ModItems.SAPPHIRE)),
     SAPPHIRE_CROWN("sapphire_crown",22, new int[] {3,1,1,1},13,
             SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 1, 0.0f,
-            () -> Ingredient.ofItems(ModItems.SAPPHIRE, Items.GOLD_INGOT))
+            () -> Ingredient.ofItems(ModItems.SAPPHIRE, Items.GOLD_INGOT)),
+    BLUESLIME_BOOTS("blueslime_boots",15, new int[] {2,4,3,2},6,
+    SoundEvents.BLOCK_SLIME_BLOCK_STEP, 1, 0.0f,
+            () -> Ingredient.ofItems(ModItems.BLUE_SLIMEBALL, Items.IRON_INGOT))
     ;
 
     private final String name;

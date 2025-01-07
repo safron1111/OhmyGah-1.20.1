@@ -28,6 +28,10 @@ public class ModItemGroups {
                         entries.add(ModItems.IRON_CHISEL);
                         entries.add(ModBlocks.SPRING_BLOCK);
                         entries.add(ModBlocks.SUPERSPRING_BLOCK);
+                        entries.add(ModItems.BOUNCYSLIME_SPAWNEGG);
+                        entries.add(ModItems.BLUE_SLIMEBALL);
+                        entries.add(ModItems.BLUESLIME_BOOTS);
+                        entries.add(ModBlocks.PLASTIC_EXPLOSIVE);
                     }).build());
 
     public static void registerItemGroups(){

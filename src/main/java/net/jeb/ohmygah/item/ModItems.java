@@ -4,6 +4,9 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.jeb.ohmygah.Ohmygah;
+import net.jeb.ohmygah.entity.custom.ModEntities;
+import net.jeb.ohmygah.item.advanced.BlueSlimeballItem;
+import net.jeb.ohmygah.item.advanced.BlueslimeBoots;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -14,6 +17,10 @@ public class ModItems {
 
     public static final Item SAPPHIRE = registerItem("sapphire", new Item(new FabricItemSettings()));
     public static final Item RAW_SAPPHIRE = registerItem("raw_sapphire", new Item(new FabricItemSettings()));
+
+    public static final Item BLUE_SLIMEBALL = registerItem("blue_slimeball", new BlueSlimeballItem(new FabricItemSettings()));
+    public static final Item BOUNCYSLIME_SPAWNEGG = registerItem("bouncyslime_spawnegg",
+            new SpawnEggItem(ModEntities.BOUNCYSLIME,0xadd8e6,0xe0ffff, new FabricItemSettings()));
 
     public static final Item SAPPHIRE_SWORD = registerItem("sapphire_sword",
             new SwordItem(ModToolMaterial.SAPPHIRE, 5, -2.4f, new FabricItemSettings()));
@@ -31,6 +38,8 @@ public class ModItems {
 
     public static final Item SAPPHIRE_CROWN = registerItem("sapphire_crown",
             new ArmorItem(ModArmorMaterial.SAPPHIRE_CROWN,ArmorItem.Type.HELMET,new FabricItemSettings()));
+    public static final Item BLUESLIME_BOOTS = registerItem("blueslime_boots",
+            new BlueslimeBoots(ModArmorMaterial.BLUESLIME_BOOTS,ArmorItem.Type.BOOTS,new FabricItemSettings()));
 
     private static void addItemsToCombatItemGroup(FabricItemGroupEntries entries) {
         entries.add(SAPPHIRE_SWORD);

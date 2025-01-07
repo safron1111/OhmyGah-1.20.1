@@ -16,5 +16,12 @@
   "item.ohmygah.sapphire_pickaxe": "Sapphire Pickaxe",
   "item.ohmygah.sapphire_crown": "Sapphire Crown",
 
-  "item.ohmygah.iron_chisel": "Iron Chisel"
+  "item.ohmygah.iron_chisel": "Iron Chisel",
+
+  "entity.ohmygah.bouncy_slime": "Bouncy Slime",
+  "item.ohmygah.bouncyslime_spawnegg": "Bouncy Slime Spawn Egg",
+  "item.ohmygah.blue_slimeball": "Blue Slimeball",
+  "item.ohmygah.blueslime_boots": "Blueslime Boots",
+
+  "block.ohmygah.plastic_explosive": "Plastic Explosive"
 }
