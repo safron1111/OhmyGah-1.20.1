@@ -6,6 +6,7 @@ import net.jeb.ohmygah.entity.custom.plasticexplosive.PlasticExplosiveEntity;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.block.BlockRenderManager;
+import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.TntEntityRenderer;
 import net.minecraft.client.render.entity.TntMinecartEntityRenderer;
@@ -17,7 +18,7 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.RotationAxis;
 
 @Environment(EnvType.CLIENT)
-public class PlasticExplosiveRenderer extends TntEntityRenderer {
+public class PlasticExplosiveRenderer extends EntityRenderer<PlasticExplosiveEntity> {
     private final BlockRenderManager blockRenderManager;
 
     public PlasticExplosiveRenderer(EntityRendererFactory.Context context) {
