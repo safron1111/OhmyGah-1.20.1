@@ -57,7 +57,7 @@ public class PlasticExplosiveEntity extends TntEntity {
         this.setFuse(i);
         if (i <= 0) {
             if (!this.getWorld().isClient) {
-                int radius = 6;
+                int radius = 7;
                 for (int vD = -radius; vD <= radius; vD++) {
                     for (int hD = -radius; hD <= radius; hD++) {
                         for (int zD = -radius; zD <= radius; zD++){
