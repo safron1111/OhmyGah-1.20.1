@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " / ",
+    ">#>",
+    " / "
+  ],
+  "key": {
+    ">": {
+      "item": "minecraft:yellow_dye"
+    },
+    "#": {
+      "item": "ohmygah:spring_block"
+    },
+    "/": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "result": {
+    "item": "ohmygah:superspring_block",
+    "count": 1
+  }
+}

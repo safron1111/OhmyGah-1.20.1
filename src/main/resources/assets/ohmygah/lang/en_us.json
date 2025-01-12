@@ -1,6 +1,5 @@
 {
   "item.ohmygah.sapphire": "Sapphire",
-  "item.ohmygah.raw_sapphire": "Raw Sapphire",
   "itemgroup.ohmygah": "Oh my gah",
 
   "block.ohmygah.sapphire_block": "Block of Sapphire",
@@ -19,9 +18,23 @@
   "item.ohmygah.iron_chisel": "Iron Chisel",
 
   "entity.ohmygah.bouncy_slime": "Bouncy Slime",
+  "entity.ohmygah.friendly_bouncy_slime": "Friendly Bouncy Slime",
+  "entity.ohmygah.king_slime": "King Slime",
   "item.ohmygah.bouncyslime_spawnegg": "Bouncy Slime Spawn Egg",
+  "item.ohmygah.kingslime_spawner": "King Slime Spawner",
   "item.ohmygah.blue_slimeball": "Blue Slimeball",
+  "item.ohmygah.blue_slimesling": "Blue Slimesling",
+  "item.ohmygah.slimesling": "Slimesling",
+  "item.ohmygah.slime_boots": "Slime Boots",
   "item.ohmygah.blueslime_boots": "Blueslime Boots",
+  "block.ohmygah.blue_slime_block": "Blueslime Block",
+  "block.ohmygah.slirt": "Slirt",
+  "block.ohmygah.slrass": "Slrass",
+  "block.ohmygah.slrass_block": "Slrass Block",
+  "block.ohmygah.blue_slrass": "Blue Slrass",
+  "block.ohmygah.blue_slrass_block": "Blue Slrass Block",
 
-  "block.ohmygah.plastic_explosive": "Plastic Explosive"
+  "block.ohmygah.nuclear_bomb": "Nuclear Bomb",
+  "block.ohmygah.plastic_explosive": "Plastic Explosive",
+  "block.ohmygah.altar": "Altar"
 }

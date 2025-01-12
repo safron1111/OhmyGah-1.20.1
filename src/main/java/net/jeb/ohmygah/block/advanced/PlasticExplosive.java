@@ -42,6 +42,14 @@ public class PlasticExplosive extends TntBlock {
         }
     }
 
+    @Override
+    public void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
+        if (world.isReceivingRedstonePower(pos)) {
+            primeExplosive(world,pos);
+            world.removeBlock(pos, false);
+        }
+    }
+
     public static void primeExplosive(World world, BlockPos pos) {
         primeExplosive(world, pos, null);
     }
@@ -85,6 +93,8 @@ public class PlasticExplosive extends TntBlock {
 
         super.onBreak(world, pos, state, player);
     }
+
+
 
     @Override
     public void onProjectileHit(World world, BlockState state, BlockHitResult hit, ProjectileEntity projectile) {

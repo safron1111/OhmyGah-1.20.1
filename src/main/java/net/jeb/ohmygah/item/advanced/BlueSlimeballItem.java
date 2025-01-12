@@ -35,7 +35,7 @@ public class BlueSlimeballItem extends Item {
         if (!world.isClient) {
             BlueSlimeballEntity blueSlimeballEntity = new BlueSlimeballEntity(user,world);
             blueSlimeballEntity.setItem(itemStack);
-            blueSlimeballEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 1.1F, 1.0F);
+            blueSlimeballEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 0.9F, 1.0F);
             world.spawnEntity(blueSlimeballEntity);
         }
 

@@ -1,6 +1,7 @@
 package net.jeb.ohmygah.item.advanced;
 
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
@@ -21,8 +22,7 @@ public class BlueslimeBoots extends ArmorItem {
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
 
         if (!world.isClient() && slot == 0) {
-
-            entity.fallDistance = entity.getSafeFallDistance();
+            entity.fallDistance = entity.getSafeFallDistance()-1;
             if (entity.isDescending()) {
                 decending = true;
             } else if (!entity.isDescending() && decending == true) {
@@ -37,7 +37,13 @@ public class BlueslimeBoots extends ArmorItem {
     }
 
     public void bounce(Entity entity, ItemStack stack) {
-        stack.setDamage(stack.getDamage() + 1);
+        if (entity instanceof PlayerEntity playerEntity){
+            if (!playerEntity.isCreative()){
+                stack.setDamage(stack.getDamage() + 1);
+            }
+        } else {
+            stack.setDamage(stack.getDamage() + 1);
+        }
         entity.addVelocity(0.0f,1.0f,0.0f);
         entity.velocityModified = true;
     }

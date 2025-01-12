@@ -26,12 +26,24 @@ public class ModItemGroups {
                         entries.add(ModItems.SAPPHIRE_PICKAXE);
                         entries.add(ModItems.SAPPHIRE_CROWN);
                         entries.add(ModItems.IRON_CHISEL);
+                        entries.add(ModItems.SLIME_COLLAR);
                         entries.add(ModBlocks.SPRING_BLOCK);
                         entries.add(ModBlocks.SUPERSPRING_BLOCK);
                         entries.add(ModItems.BOUNCYSLIME_SPAWNEGG);
+                        entries.add(ModItems.KINGSLIME_SPAWNER);
                         entries.add(ModItems.BLUE_SLIMEBALL);
+                        entries.add(ModBlocks.BLUE_SLIME_BLOCK);
                         entries.add(ModItems.BLUESLIME_BOOTS);
+                        entries.add(ModItems.BLUE_SLIMESLING);
+                        entries.add(ModItems.SLIMESLING);
+                        entries.add(ModItems.SLIME_BOOTS);
+                        entries.add(ModBlocks.SLIRT);
+                        entries.add(ModBlocks.SLRASS);
+                        entries.add(ModBlocks.SLRASS_BLOCK);
+                        entries.add(ModBlocks.BLUE_SLRASS);
+                        entries.add(ModBlocks.BLUE_SLRASS_BLOCK);
                         entries.add(ModBlocks.PLASTIC_EXPLOSIVE);
+                        entries.add(ModBlocks.NUCLEAR_BOMB);
                     }).build());
 
     public static void registerItemGroups(){

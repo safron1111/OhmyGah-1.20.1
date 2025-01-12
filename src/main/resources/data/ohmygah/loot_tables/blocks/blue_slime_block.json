@@ -1,0 +1,21 @@
+{
+  "type": "block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "ohmygah:blue_slime_block"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "ohmygah:blocks/blue_slime_block"
+}

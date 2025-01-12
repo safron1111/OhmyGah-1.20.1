@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "ohmygah:block/slirt",
+    "east": "ohmygah:block/slrass_side",
+    "north": "ohmygah:block/slrass_side",
+    "particle": "ohmygah:block/slrass_side",
+    "south": "ohmygah:block/slrass_side",
+    "up": "ohmygah:block/slrass_top",
+    "west": "ohmygah:block/slrass_side"
+  }
+}

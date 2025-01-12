@@ -1,5 +1,6 @@
 package net.jeb.ohmygah.entity.custom.blueslimeball_entity;
 
+import net.jeb.ohmygah.Ohmygah;
 import net.jeb.ohmygah.entity.custom.ModEntities;
 import net.jeb.ohmygah.item.ModItems;
 import net.minecraft.block.dispenser.DispenserBehavior;
@@ -38,7 +39,7 @@ public class BlueSlimeballEntity extends ThrownItemEntity {
     @Override
     protected void onBlockHit(BlockHitResult blockHitResult) {
         if (!this.getWorld().isClient()){
-            if (Math.abs(this.getVelocity().x)+Math.abs(this.getVelocity().y)+Math.abs(this.getVelocity().z) < 0.115){
+            if (Math.abs(this.getVelocity().x)+Math.abs(this.getVelocity().y)+Math.abs(this.getVelocity().z) < 0.135){
                 dropStack(new ItemStack(ModItems.BLUE_SLIMEBALL,1));
                 this.discard();
             }
@@ -61,7 +62,8 @@ public class BlueSlimeballEntity extends ThrownItemEntity {
     @Override
     protected void onEntityHit(EntityHitResult entityHitResult) {
         if (!this.getWorld().isClient()){
-            entityHitResult.getEntity().damage(this.getDamageSources().thrown(this,this.getOwner()),1);
+            entityHitResult.getEntity().damage(this.getDamageSources().thrown(this,this.getOwner()),1.3f*((float)Math.abs(this.getVelocity().x)+(float)Math.abs(this.getVelocity().y)+(float)Math.abs(this.getVelocity().z)));
+            Ohmygah.LOGGER.info(String.valueOf(1.3f*((float)Math.abs(this.getVelocity().x)+(float)Math.abs(this.getVelocity().y)+(float)Math.abs(this.getVelocity().z))));
             dropStack(new ItemStack(ModItems.BLUE_SLIMEBALL,1));
             this.discard();
         }

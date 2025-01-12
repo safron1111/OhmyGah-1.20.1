@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "ohmygah:sapphire_block",
-    "ohmygah:sapphire_ore"
+    "ohmygah:sapphire_ore",
+    "ohmygah:spring_block",
+    "ohmygah:superspring_block"
   ]
 }

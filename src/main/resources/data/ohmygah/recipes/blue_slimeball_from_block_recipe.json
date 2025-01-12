@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "ohmygah:blue_slime_block"
+    }
+  ],
+  "result": {
+    "item": "ohmygah:blue_slimeball",
+    "count": 9
+  }
+}

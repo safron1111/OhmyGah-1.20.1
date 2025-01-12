@@ -19,7 +19,10 @@ public enum ModArmorMaterial implements ArmorMaterial {
             () -> Ingredient.ofItems(ModItems.SAPPHIRE, Items.GOLD_INGOT)),
     BLUESLIME_BOOTS("blueslime_boots",15, new int[] {2,4,3,2},6,
     SoundEvents.BLOCK_SLIME_BLOCK_STEP, 1, 0.0f,
-            () -> Ingredient.ofItems(ModItems.BLUE_SLIMEBALL, Items.IRON_INGOT))
+            () -> Ingredient.ofItems(ModItems.BLUE_SLIMEBALL, Items.IRON_INGOT)),
+    SLIME_BOOTS("slime_boots",15, new int[] {2,4,3,2},6,
+    SoundEvents.BLOCK_SLIME_BLOCK_STEP, 1, 0.0f,
+            () -> Ingredient.ofItems(Items.SLIME_BALL, Items.IRON_INGOT))
     ;
 
     private final String name;

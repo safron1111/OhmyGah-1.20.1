@@ -1,14 +1,15 @@
 package net.jeb.ohmygah.entity.custom.bouncy_slime;
 
+import net.jeb.ohmygah.particle.ModParticles;
+import net.minecraft.block.BlockState;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.ai.control.MoveControl;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.mob.SlimeEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.particle.ParticleEffect;
-import net.minecraft.particle.ParticleTypes;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 
@@ -21,8 +22,17 @@ public class BouncySlimeEntity extends SlimeEntity {
 
     @Override
     protected ParticleEffect getParticles() {
-        return ParticleTypes.ITEM_SLIME;
+        return ModParticles.BLUESLIME_PARTICLE;
     }
+
+    @Override
+    protected void fall(double heightDifference, boolean onGround, BlockState state, BlockPos landedPosition) {
+        if (onGround){
+            this.handleFallDamage(0.0f,0.0f,this.getDamageSources().fall());
+        }
+    }
+
+
 
     @Override
     public void onPlayerCollision(PlayerEntity player) {

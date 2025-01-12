@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "ohmygah:blue_slimeisland",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "frequency": 0.05,
+    "type": "minecraft:random_spread",
+    "spacing": 10,
+    "separation": 6,
+    "salt": 1946107474
+  }
+}
