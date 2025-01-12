@@ -16,7 +16,6 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ohmygah"))
                     .icon(() -> new ItemStack(ModItems.SAPPHIRE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.SAPPHIRE);
-                        entries.add(ModItems.RAW_SAPPHIRE);
                         entries.add(ModBlocks.SAPPHIRE_BLOCK);
                         entries.add(ModBlocks.SAPPHIRE_ORE);
                         entries.add(ModItems.SAPPHIRE_SWORD);
